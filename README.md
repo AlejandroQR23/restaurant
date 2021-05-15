@@ -10,3 +10,6 @@ You can read the source code by going to the src folder. The whole content of th
 ## Production bundle
 
 The webpage you see deployed is located in the docs folder. It was created with webpack in order to maximize compatibility with old browsers (I use Babel) and minimize the final weight of the site.
+
+## Odin Project
+This was created as part of the Odin's Project Curriculum
