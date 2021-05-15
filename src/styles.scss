@@ -1,0 +1,28 @@
+
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: $white;
+    color: $secondary;
+    min-height: 100%;
+}
+
+.bg {
+    background-color: $bg-color;
+}
+
+header {
+
+    .logo {
+        img {
+            width: 100px;
+        }
+    }
+
+}
+
+#content {
+    padding-bottom: 80px;
+}
+
