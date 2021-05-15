@@ -34,6 +34,46 @@ export class PageLoader {
         this.body.insertBefore( header, this.contentDiv );
     }
 
+    loadFooter() {
+
+        const footerHTML = `
+        <!-- Footer elements -->
+        <div class="container pt-4">
+    
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/mermeladart" class="nav-link" target="_blank">
+                        <i class="bi bi-facebook"> </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <!-- Twitter -->
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-twitter"> </i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <!--Instagram-->
+                    <a href="https://www.instagram.com/sweetfruit_jam/" class="nav-link" target="_blank">
+                        <i class="bi bi-instagram"> </i>
+                    </a>
+                </li>
+            </ul>
+    
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+            <a href="#"> Sweet Fruit </a>
+        </div>
+        `;
+    
+        const footer = document.createElement( 'footer' );
+        footer.innerHTML = footerHTML;
+        footer.classList += "page-footer bg";
+        this.body.append( footer );
+    
+    }
+
     loadContent( content='home' ) {
 
         if( this.content ) {
@@ -57,6 +97,7 @@ export class PageLoader {
 
         this.loadHeader();
         this.loadContent();
+        this.loadFooter();
 
     }
 
